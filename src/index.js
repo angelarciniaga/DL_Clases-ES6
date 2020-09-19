@@ -15,7 +15,7 @@ function impuestoAnualPagar(event) {
     if (cliente && parseInt(ventas) && parseInt(deducciones)) {
         let n_cliente = new Cliente(cliente);
         let impuesto = new Impuesto(parseInt(ventas), parseInt(deducciones));
-        resultado.innerHTML = `El cliente ${n_cliente.nombre()} tiene un monto total a pagar por el año de: ${impuesto.calcularImpuesto()}.`
+        resultado.innerHTML = `El cliente ${n_cliente.nombre()} tiene un monto total a pagar por este año de: ${impuesto.calcularImpuesto()}.`
     }else {
         alert('Ingrese un valor numérico');
     };
